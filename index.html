@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>بوابة التسجيل</h1>
+    <p>الرجاء ادخال المعلومات الصحيحة الخاصة بكم</p>
+    <form action="https://www.ayadaoussama.site/" method="post">
+      <fieldset>
+        <label for="الإسم">
+          الرجاء إدخال الإسم
+          <input id="الإسم" type="text" required />
+        </label>
+        <label for="اللقب">
+          الرجاء إدخال اللقب
+          <input id="اللقب" type="text" required />
+        </label>
+        <label for="البريد الإلكتروني"
+          >البريد الإلكتروني
+          <input id="البريد الإلكتروني" type="email" required />
+        </label>
+        <label for="كلمة العبور"
+          >كلمة العبور
+          <input id="كلمة العبور" type="password" required minlength="8" />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="حساب شخصي">
+          حساب شخصي
+          <input class="input" id="حساب شخصي" type="radio" name="حساب شخصي" />
+        </label>
+        <label for="حساب عمل">
+          حساب عمل
+          <input class="input" id="حساب عمل" type="radio" name="حساب عمل" />
+        </label>
+        <label for="سياسة الخصوصية">
+          أنا موافق هلى سياسة الخصوصية
+          <input class="input" id="سياسة الخصوصية" type="checkbox" required />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <label for="صورة">
+          الرجاء إدخال صورتك الشخصية
+          <input id="صورة" type="file" />
+        </label>
+
+        <label for="العمر">
+          الرجاء إدخال عمرك
+          <input id="العمر" type="number" min="18" max="200" />
+        </label>
+        <label for="المرجعية">
+          كيف تعرفت عنا؟
+          <select name="" id="المرجعية">
+            <option value="">اختر واحدة</option>
+            <option value="1">الفيسبوك</option>
+            <option value="2">الإنترنات</option>
+            <option value="3">عن طريق صديق</option>
+            <option value="4">اليوتوب</option>
+          </select>
+        </label>
+        <label for="عني">
+          عرفني عنك قليلا
+          <textarea
+            name=""
+            id="عني"
+            rows="3"
+            cols="30"
+            placeholder="حدثني عنك قليلا"
+          ></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
